@@ -1,0 +1,14 @@
+Compare which text has better structural format. It has better structural format when it has a well-defined structure such as outline format, Markdown, numbered list, bulleted list, JSON, table format, headings and subheadings format or other organizational templates.
+First, consider the visual structure of text. Then, only consider the content or logical flow of text.
+Your judgement should not be influenced by the language the text is written in, the length of the text and the order in which the texts are presented.
+If the texts have similar quality, you should still make a relative judgement and choose the label of the preferred text. 
+You must respond with format:
+`Choice: 1 or 2\nWhy: reason of choice`
+
+[Text 1]
+... {text_1} ...
+
+[Text 2]
+... {text_2} ...
+
+Now you have to choose between either 1 or 2. Note that respond only with the format mentioned.

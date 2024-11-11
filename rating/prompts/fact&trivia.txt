@@ -1,0 +1,14 @@
+Compare which text is contains more facts and trivia. The facts and trivia should be accurate. 
+Prefer text which have more number of facts. Put lower priority to facts which contain mathematical calculations and with too deep "concepts and explanations" .
+Your judgement should not be influenced by the language the text is written in, the length of the text and the order in which the texts are presented.
+If the texts have similar quality, you should still make a relative judgement and choose the label of the preferred text. 
+You must respond with format:
+`Choice: 1 or 2\nWhy: reason of choice`
+
+[Text 1]
+... {text_1} ...
+
+[Text 2]
+... {text_2} ...
+
+Now you have to choose between either 1 or 2. Note that respond only with the format mentioned.

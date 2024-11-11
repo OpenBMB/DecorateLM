@@ -1,0 +1,14 @@
+Compare which text contains more subjectivity, e.g, it includes more subjective perspectives, opinions, personal views or feelings. Avoid choosing text which conveys objective, factual and widely accepted, accurate knowledge. 
+Prefer text which personal opinions such as dialogues or feelings over text which seems like a formal examination question and answer.
+Your judgement should not be influenced by the language the text is written in, the length of the text and the order in which the texts are presented.
+If the texts have similar quality, you should still make a relative judgement and choose the label of the preferred text. 
+You must respond with format:
+`Choice: 1 or 2\nWhy: reason of choice`
+
+[Text 1]
+... {text_1} ...
+
+[Text 2]
+... {text_2} ...
+
+Now you have to choose between either 1 or 2. Note that respond only with the format mentioned.
