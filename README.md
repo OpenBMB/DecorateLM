@@ -77,3 +77,6 @@ The following rating criteria are supported:
 - subjectivity: Rates items based on subjectivity or personal opinion.
 
 To use a rating criterion, set the `TASK` variable in the Bash script to one of the criteria listed above.
+
+### Tagging
+
