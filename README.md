@@ -84,6 +84,14 @@ To use a rating criterion, set the `TASK` variable in the Bash script to one of 
 
 [Details coming soon.]
 
+## Decorated Corpus
+
+[Details coming soon]
+
+## DecorateLM model
+
+[Details coming soon]
+
 ## Citation
 
 If you find DecorateLM helpful in your research, please cite our paper:
