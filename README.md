@@ -1,18 +1,16 @@
 # DecorateLM
 
-**DecorateLM** is an open-source data engineering toolkit for enhancing the quality of pretraining corpora used in Large Language Models (LLMs). By addressing the need for structured, high-quality data, DecorateLM applies advanced data processing techniques to improve model performance on diverse text data.
+This is the official repository for **[DecorateLM: Data Engineering through Corpus Rating, Tagging, and Editing with Language Models](https://arxiv.org/pdf/2410.05639)**, presented at the Main Conference at EMNLP 2024 (Miami). DecorateLM offers a systematic approach to improve pretraining corpora for Large Language Models (LLMs) through innovative data engineering techniques.
 
-## Overview
+**DecorateLM** is an open-source toolkit designed to:
 
-DecorateLM is designed to:
+- **Rate**: Assess texts against predefined quality criteria, filtering lower-quality data.  
+- **Tag**: Organize data with hierarchical labels for better categorization and structured training.  
+- **Edit**: Refine and standardize text formats to ensure consistency and clarity.  
 
-- **Rate**: Assess texts against predefined quality criteria, helping filter out lower-quality data.
-- **Tag**: Organize data with hierarchical labels for better dataset categorization and structured training.
-- **Edit**: Standardize and refine text format to ensure consistency and clarity.
+By optimizing the quality of pretraining data, DecorateLM enhances model robustness and adaptability across diverse tasks.
 
-By systematically rating, tagging, and editing the corpus, DecorateLM aims to maximize the utility of pretraining data, boosting the model’s robustness and adaptability across tasks.
-
-The repository provides open-source code for each annotation phase—rating, tagging, and editing. The DecorateLM model will soon be available on Hugging Face, allowing researchers and developers to seamlessly integrate high-quality data refinement into their LLM training pipelines.
+The repository provides open-source implementations for each annotation phase—rating, tagging, and editing. The DecorateLM model will soon be available on Hugging Face, empowering researchers and developers to seamlessly integrate high-quality data refinement into their LLM training pipelines.
 
 ## Annotation
 
@@ -80,3 +78,21 @@ To use a rating criterion, set the `TASK` variable in the Bash script to one of 
 
 ### Tagging
 
+[Details coming soon.]
+
+### Editing 
+
+[Details coming soon.]
+
+## Citation
+
+If you find DecorateLM helpful in your research, please cite our paper:
+``` bibtex
+@inproceedings{zhao2024decoratelm,
+  title={DecorateLM: Data Engineering through Corpus Rating, Tagging, and Editing with Language Models},
+  author={Zhao, Ranchi and Thai, Zhen and Zhang, Yifan and Hu, Shengding and Zhou, Jie and Ba, Yunqi and Cai, Jie and Liu, Zhiyuan and Sun, Maosong},
+  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages={1401--1418},
+  year={2024}
+}
+```
