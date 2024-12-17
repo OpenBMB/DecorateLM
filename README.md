@@ -108,7 +108,7 @@ bash ./annotating/tagging/scripts/run_tagging_second_third_level.sh
 
 ### Editing 
 
-[Details coming soon.]
+The prompts are shown in `./annotating/editing/prompts`.
 
 ## Sampling
 
