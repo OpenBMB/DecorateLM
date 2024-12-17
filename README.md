@@ -124,7 +124,7 @@ Finally, complete the join operation using `./sampling/sample_by_uuid.py` to ret
 
 ## Annotated Corpus
 
-[Details coming soon]
+See `annotating/annotated_corpus.jsonl`.
 
 ## Decorated Corpus
 
