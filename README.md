@@ -19,7 +19,7 @@ The repository provides open-source implementations for each annotation phase—
 To run the complete scoring pipeline, execute the main Bash script:
 
 ``` bash
-bash run_scoring_pipeline.sh
+bash ./annotating/rating/run_scoring_pipeline.sh
 ```
 
 Each step in the pipeline performs a specific function, as outlined below.
@@ -78,11 +78,53 @@ To use a rating criterion, set the `TASK` variable in the Bash script to one of 
 
 ### Tagging
 
-[Details coming soon.]
+During the tagging phase, begin by summarizing the data using the script:
+
+```bash
+bash ./annotating/tagging/scripts/run_summary.sh
+```
+
+This initial step helps facilitate subsequent annotation tasks.
+
+Next, annotate the first level labels using the script:
+
+```bash
+bash ./annotating/tagging/scripts/run_tagging_first_level.sh
+```
+
+Finally, proceed to label the second and third-level tags with the script:
+
+```bash
+bash ./annotating/tagging/scripts/run_tagging_second_third_level.sh
+```
+
+#### Configuration Options
+
+- `filepath`: Path to the input JSONL file prepared for tagging.
+- `task`: Choose From `['summary' , 'tag_first_level', 'tag_second_third_level']`
+- `totalinstance`: Total number of items to be tagged.
+- `batchsize`: Number of items in each batch for annotation.
+- `start`: Supports resuming tagging after interruption.
 
 ### Editing 
 
 [Details coming soon.]
+
+## Sampling
+
+After obtaining the entire Decorated Corpus, data sampling can be performed based on predefined heuristic rules to obtain the filtered data used for training.
+
+Specifically, start by generating a UUID for each data entry using the script located at `./sampling/generate_uuid.py`. 
+
+Then, taking 'rating' as an example, use predefined heuristic rules to calculate the sampling probability for each data entry with the script `./sampling/rating/count_prob.py`. 
+
+Next, perform sampling without replacement using the script `./sampling/tagging/sample_data.py`. 
+
+Finally, complete the join operation using `./sampling/sample_by_uuid.py` to retrieve the complete data set based on the sampled UUIDs.
+
+## Annotated Corpus
+
+[Details coming soon]
 
 ## Decorated Corpus
 

@@ -8,7 +8,7 @@ import time, random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 api_keys = [
-    {'api_key' : 'sk-4m8MQJki0jTmnicPC967B9F1091d449585Fd76D6E923Db32'}
+    {'api_key' : 'xxxxx'}
 ]
 
 invalid_keys = set()

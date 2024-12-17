@@ -6,7 +6,6 @@ import os
 from tqdm import tqdm
 from datetime import datetime
 
-source_file = "data/deduped_redpajama_en_all_security_2024-1-8_new_0113.txt"
 
 def get_raw_data(file_path, total_instance, start=0):
     _, file_extension = os.path.splitext(file_path)
@@ -17,7 +16,6 @@ def get_raw_data(file_path, total_instance, start=0):
             for i, line in enumerate(tqdm(f, desc="Processing .jsonl file")):
                 if len(raw_data) >= total_instance:
                     break
-                # print(line)
                 d = json.loads(line.strip())
                 if "instance_id" in d:
                     if d["instance_id"] < start:
@@ -36,7 +34,6 @@ def get_raw_data(file_path, total_instance, start=0):
                 elif 'summary' in d and isinstance(d['summary'], str):
                     d['original_content'] = {}
                     d['original_content']['raw_content'] = d['summary']
-                    # del d['summary']
                 raw_data.append(d)
 
     elif file_extension == '.md':
@@ -189,8 +186,6 @@ valid_parent_tags = [
     "Emotional Psychology", "Fashion and Beauty", "Sports", "Home and Lifestyle",
     "Public Administration", "Social Events"
 ]
-
-
 
 if __name__=="__main__":
     import argparse
